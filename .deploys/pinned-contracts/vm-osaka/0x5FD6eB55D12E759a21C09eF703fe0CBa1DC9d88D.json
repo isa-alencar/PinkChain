@@ -1,0 +1,223 @@
+{
+  "name": "pinkChain",
+  "address": "0x5FD6eB55D12E759a21C09eF703fe0CBa1DC9d88D",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "proofActionID",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "empresa",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "financeiroHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "FinanceiroProof",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "proofActionID",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "ong",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "impactoHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "ImpactoProof",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "proofActionID",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "empresa",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "ong",
+          "type": "address"
+        }
+      ],
+      "name": "SeloEmissao",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "ong",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "status",
+          "type": "bool"
+        }
+      ],
+      "name": "gerenciarWhitelist",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "proofActionID",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_financeiroHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "_ong",
+          "type": "address"
+        }
+      ],
+      "name": "submeteFinanceiroProof",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "proofActionID",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_impactoHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "submeteImpactoProofAndVerify",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "admin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "ongWhitelist",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "proofs",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "financeiroHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "impactoHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "empresaDoadora",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "ongDestino",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "isFinanceiroValido",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "isImpactoValido",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "seloPinkChain",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "filePath": "",
+  "pinnedAt": 1790645985668
+}
