@@ -1,0 +1,4 @@
+{
+  "hardhat@3.17.0/console.sol": ".deps/npm/hardhat@3.17.0/console.sol",
+  "contracts@0.4.0/{PinkChain.sol": ".deps/npm/contracts@0.4.0/{PinkChain.sol"
+}
