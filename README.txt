@@ -2,10 +2,14 @@ REMIX PINKCHAIN WORKSPACE
 
 Arquivos configurados no Remix IDE para implementação do projeto PinkChain.
 
-Diretórios:
+Diretórios contrato-base:
 1. 'contracts': contrato PinkChain elaborado conforme o trabalho descrito.
 2. 'scripts': typescript para implementar o contrato.
 3. 'tests': testes em JS para validar a corretude do contrato.
+
+Diretórios DApp:
+1. 'src': arquivos de estilo da aplicação desenvolvida com a IA Remix IDE.
+
 
 SCRIPTS
 
